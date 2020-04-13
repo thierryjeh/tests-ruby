@@ -1,15 +1,19 @@
 require_relative '../lib/03_basics'
 
-describe 'who is the biggest number' do
+=begin
+describe 'who_is_bigger' do
   # Hint: 'def who_is_bigger(a, b, c)'
   it 'tells me the biggest' do
-    expect(who_is_bigger(84, 42, nil)).to eq("nil detected")
+    expect(who_is_biggerwho_is_bigger(a,b,c))).to eq("nil detected")
     expect(who_is_bigger(nil, 42, 21)).to eq("nil detected")
     expect(who_is_bigger(84, 42, 21)).to eq("a is bigger")
     expect(who_is_bigger(42, 84, 21)).to eq("b is bigger")
     expect(who_is_bigger(42, 21, 84)).to eq("c is bigger")
   end
 end
+=end
+
+
 
 describe 'crazy stuff on strings' do
   # Reverse, upcase then removes all L, T and A.
@@ -23,6 +27,7 @@ describe 'crazy stuff on strings' do
       .to eq("NBVCXZ;KJHGFDSPOIUYREWQ")
   end
 end
+
 
 
 describe '42 finder' do
@@ -57,3 +62,5 @@ describe 'crazy stuff on arrays' do
       .to eq([2, 4, 14, 16, 64])
   end
 end
+
+
